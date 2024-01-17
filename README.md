@@ -1,1 +1,1 @@
-# terraform-aws
+# Sample AWS infrastructure
