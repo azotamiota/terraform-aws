@@ -1,3 +1,7 @@
+variable "vpc_cidr_block" {
+    description = "VPC CIDR to create subnets in"
+}
+
 variable "subnet_cidr_block" {
     description = "CIDR block"
 }

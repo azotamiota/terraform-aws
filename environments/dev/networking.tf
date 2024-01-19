@@ -12,6 +12,7 @@ module "subnets" {
   vpc_id            = module.dev_vpc.vpc_id
   tags              = merge(var.tags, tomap({ "Name" = "Dev-Private-Subnet" }))
   azs               = var.cluster_azs
+  vpc_cidr_block    = module.dev_vpc.vpc_cidr_block
 }
 
 # module "public_subnet" {

@@ -12,7 +12,7 @@ variable "private_subnets" {
 }
 
 variable "public_subnets" {
-  description = "List of CIDRs to create for private subnets"
+  description = "List of CIDRs to create for public subnets"
   type        = list(any)
 }
 
