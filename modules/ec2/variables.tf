@@ -1,16 +1,16 @@
 variable "subnet_id" {
-    type = string
+  type = string
 }
 
 variable "ami" {
-    type = string
+  type = string
 }
 
 variable "tags" {
-    type = map
+  type = map(any)
 }
 
 variable "instance_type" {
-    type = string
-    default = "t3.micro"
+  type    = string
+  default = "t3.micro"
 }

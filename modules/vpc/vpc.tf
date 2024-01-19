@@ -1,6 +1,6 @@
 resource "aws_vpc" "vpc_module" {
-  cidr_block       = var.vpc_cidr_block
-  tags = tomap(var.tags)
+  cidr_block = var.vpc_cidr_block
+  tags       = tomap(var.tags)
 }
 
 # resource "aws_internet_gateway" "igw" {
