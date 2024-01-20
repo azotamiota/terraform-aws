@@ -1,4 +1,4 @@
-# vpc_name          = "test-dev-vpc"
+vpc_name          = "test-dev-vpc"
 # cidr_block        = "10.166.0.0/16"
 subnet_cidr_block = "10.166.0.0/24"
 private_subnets   = ["0", "1", "2"]

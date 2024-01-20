@@ -27,3 +27,8 @@ variable "newbits" {
   type        = number
   default     = 8
 }
+
+variable "vpc_name" {
+  description = "The name of the VPC"
+  type = string
+}

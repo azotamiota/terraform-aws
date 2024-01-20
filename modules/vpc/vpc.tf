@@ -3,9 +3,9 @@ resource "aws_vpc" "vpc_module" {
   tags       = tomap(var.tags)
 }
 
-# resource "aws_internet_gateway" "igw" {
-#   vpc_id = aws_vpc.vpc_module.id
-#   tags = merge(var.tags,
-#     tomap({"Name" = "${aws_vpc.vpc_module.id}-internet-gateway"})
-#   )
-# }
+resource "aws_internet_gateway" "igw" {
+  vpc_id = aws_vpc.vpc_module.id
+  tags = merge(var.tags,
+    tomap({ "Name" = "${var.vpc_name}-internet-gateway" })
+  )
+}

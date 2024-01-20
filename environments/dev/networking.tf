@@ -1,6 +1,7 @@
 module "dev_vpc" {
   source = "../../modules/vpc"
-  tags   = merge(var.tags, tomap({ "Name" = "Dev-VPC" }))
+  vpc_name = var.vpc_name
+  tags   = merge(var.tags, tomap({ "Name" = "Test-Dev-VPC" }))
 }
 
 module "subnets" {
